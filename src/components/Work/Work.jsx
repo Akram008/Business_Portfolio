@@ -2,7 +2,7 @@ import React from 'react'
 
 function Work() {
   return (
-    <div id='work' className='w-full bg-[#141313] px-10 md:px-15 py-20 md:py-25'>
+    <div id='work' className='z-20 w-full bg-[#141313] px-10 md:px-15 py-20 md:py-25'>
       <h1 className='uppercase text-4xl font-bold text-center text-gray-300 tracking-widest montserrat-head-font'>Work</h1>
       <p className='text-center text-white/50 text-sm mt-5 inter-sub-font'>Top Work Projects</p>
 

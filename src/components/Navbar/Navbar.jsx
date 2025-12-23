@@ -12,6 +12,21 @@ function Navbar() {
   const [openMenu, setOpenMenu] = useState(false)   
 
   const mobileMenuRef = useRef()   
+
+  useGSAP(()=>{
+    const tl = gsap.timeline() 
+    tl.from('#desktopContainer h1', {
+      y: '-100%',
+      opacity: 0, 
+      duration: 0.5, 
+      delay: 3
+    })
+    tl.from('#desktopContainer div h2', {
+      y: '-100%', 
+      opacity: 0,
+      stagger: 0.2
+    })
+  })
   
   
   const {contextSafe} = useGSAP(()=>{
@@ -56,8 +71,8 @@ function Navbar() {
   };
 
   return (
-    <div className='z-50 fixed top-0 left-0 w-full px-10 md:px-15 py-8 md:py-10 bg-transparent backdrop-blur-md'>
-    <div className='w-full flex items-center justify-between '>
+    <div id='navbar' className='z-50 fixed top-0 left-0 w-full px-10 md:px-15 py-8 md:py-10 bg-transparent'>
+    <div id='desktopContainer' className='w-full flex items-center justify-between '>
         <h1 className='text-[#e2d8d8] font-bold italic montserrat-head-font'>Akram</h1>
         <div className=' items-center gap-8 hidden md:flex inter-sub-font'>
             <h2 className='text-[#e2d8d8] cursor-pointer' onClick={()=>scrollToSection('home')}>Home</h2>
