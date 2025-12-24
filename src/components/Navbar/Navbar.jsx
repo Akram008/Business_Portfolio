@@ -21,11 +21,16 @@ function Navbar() {
       duration: 0.5, 
       delay: 3
     })
+    tl.from('#desktopContainer .hamburger', {
+      y: '-100%', 
+      opacity: 0,
+    })
     tl.from('#desktopContainer div h2', {
       y: '-100%', 
       opacity: 0,
       stagger: 0.2
     })
+    
   })
   
   
@@ -81,18 +86,18 @@ function Navbar() {
             <h2 className='text-[#e2d8d8] text-md mx-5 font-bold cursor-pointer' onClick={()=>scrollToSection('whyMe')}>Why Choose Me</h2>
             <h2 className='text-[#e2d8d8] cursor-pointer' onClick={()=>scrollToSection('contactMe')} >Testimonials</h2> 
         </div>
-        <button className={`md:hidden text-[#e2d8d8] ${openMenu && 'hidden'}`} onClick={handleOpenMobileMenu}><HiMenuAlt3/></button>
+        <button className={`hamburger md:hidden text-[#e2d8d8] ${openMenu && 'hidden'}`} onClick={handleOpenMobileMenu}><HiMenuAlt3/></button>
         <button className={`md:hidden text-[#e2d8d8] ${!openMenu && 'hidden'}`} onClick={handleCloseMobileMenu}><RiCloseFill/></button>
     </div>
 
     {/* mobile menu */} 
 
     <div ref={mobileMenuRef} className='mobileMenu w-full h-auto flex flex-col items-center gap-5 md:hidden overflow-hidden inter-sub-font'>
-        <h2 className='text-[#e2d8d8] w-full text-center py-2 '>Home</h2>
-        <h2 className='text-[#e2d8d8] w-full text-center py-2 '>Work</h2>
-        <h2 className='text-[#e2d8d8] w-full text-center py-2'>Services</h2>
-        <h2 className='text-[#e2d8d8] text-md mx-5 font-bold w-full text-center py-2'>Why Choose Me</h2>
-        <h2 className='text-[#e2d8d8] w-full text-center py-2'>Testimonials</h2> 
+        <h2 className='text-[#e2d8d8] w-full text-center py-2 ' onClick={()=>scrollToSection('home')}>Home</h2>
+        <h2 className='text-[#e2d8d8] w-full text-center py-2 ' onClick={()=>scrollToSection('work')}>Work</h2>
+        <h2 className='text-[#e2d8d8] w-full text-center py-2' onClick={()=>scrollToSection('services')}>Services</h2>
+        <h2 className='text-[#e2d8d8] text-md mx-5 font-bold w-full text-center py-2' onClick={()=>scrollToSection('whyMe')}>Why Choose Me</h2>
+        <h2 className='text-[#e2d8d8] w-full text-center py-2' onClick={()=>scrollToSection('contactMe')}>Testimonials</h2> 
     </div>
     </div>
   )

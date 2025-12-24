@@ -14,25 +14,25 @@ function ContactMe() {
         
         {/* my details */}
 
-        <div className='w-full flex flex-col md:flex-row justify-between md:items-start gap-10 px-10 md:px-15 py-20 md:py-25 '>
+        <div className='w-full flex flex-col md:flex-row justify-between md:items-start gap-10 px-10 md:px-15 py-20 md:py-25 inter-sub-font'>
             
             <div className='flex flex-col items-center w-full md:w-1/3 lg:w-1/2'>
                 <div className='w-full flex flex-wrap md:flex-col h-full justify-center md:justify-between gap-10 md:gap-5 px-10 py-5 md:px-0 md:py-0'>
 
                     <div className=' flex flex-col items-center md:items-start gap-2'> 
-                        <h2 className='uppercase font-bold text-[2vmax] md:text-xl text-[#807d7d]'>Email Address</h2>
-                        <p className='underline text-[2vmax] md:text-md text-white'>khanakram32392@gmail.com</p>
+                        <h2 className='uppercase font-bold text-lg text-[#807d7d]'>Email Address</h2>
+                        <p className='underline text-md text-white'>khanakram32392@gmail.com</p>
                     </div>
 
                 <div className=' flex flex-col items-center md:items-start gap-2'> 
-                    <h2 className='uppercase font-bold text-[2vmax] md:text-xl text-[#807d7d]'>Call</h2>
-                    <p className='underline text-[2vmax] md:text-md text-white'>+91 6350164284</p>
+                    <h2 className='uppercase font-bold text-lg text-[#807d7d]'>Call</h2>
+                    <p className='underline text-md text-white'>+91 6350164284</p>
                 </div>
 
                 <div className=' flex flex-col items-center md:items-start gap-2'> 
-                    <h2 className='uppercase font-bold text-[2vmax] md:text-xl text-[#807d7d]'>Location</h2>
-                    <p className='underline text-[2vmax] md:text-md text-white'>Tal Katora, Tonk, Rajasthan</p>
-                    <p className='text-white text-[2vmax] md:text-md'>304001</p>
+                    <h2 className='uppercase font-bold text-lg text-[#807d7d]'>Location</h2>
+                    <p className='underline text-md text-white'>Tal Katora, Tonk, Rajasthan</p>
+                    <p className='text-white text-md'>304001</p>
                 </div>
                 </div>
             </div>
@@ -44,11 +44,11 @@ function ContactMe() {
                 <div className=' flex justify-between items-center gap-3'>
                     <div className='w-full flex flex-col gap-1'>
                         <label htmlFor='firstName' className="text-white">First Name</label>
-                        <input type="text" id='firstName' className='w-full bg-zinc-800 p-1 outline-none'/>
+                        <input type="text" id='firstName' className='w-full bg-zinc-800 p-1 outline-none text-white'/>
                     </div>
                     <div className='w-full flex flex-col gap-1'>
                         <label htmlFor='lastName' className="text-white">Last Name</label>
-                        <input type="text" id='lastName' className='w-full bg-zinc-800 p-1 outline-none'/>
+                        <input type="text" id='lastName' className='w-full bg-zinc-800 p-1 outline-none text-white'/>
                     </div>
                 </div>
 
@@ -57,11 +57,11 @@ function ContactMe() {
                 <div className='w-full flex justify-between items-center gap-3'>
                     <div className='flex flex-col gap-1'>
                         <label htmlFor='email' className="text-white">Email</label>
-                        <input type="text" id='email' className='w-full bg-zinc-800 p-1 outline-none'/>
+                        <input type="text" id='email' className='w-full bg-zinc-800 p-1 outline-none text-white'/>
                     </div>
                     <div className='flex flex-col gap-1'>
                         <label htmlFor='phone' className="text-white">Phone</label>
-                        <input type="text" id='phone' className='w-full bg-zinc-800 p-1 outline-none'/>
+                        <input type="text" id='phone' className='w-full bg-zinc-800 p-1 outline-none text-white'/>
                     </div>
                 </div>
 
@@ -70,11 +70,11 @@ function ContactMe() {
                 <div className='w-full flex justify-between items-center gap-3'>
                     <div className='flex flex-col gap-1'>
                         <label htmlFor='location' className="text-white">Location</label>
-                        <input type="text" id='location' className='w-full bg-zinc-800 p-1 outline-none'/>
+                        <input type="text" id='location' className='w-full text-white bg-zinc-800 p-1 outline-none'/>
                     </div>
                     <div className='w-1/3 flex flex-col gap-1'>
                         <label htmlFor='date' className="text-white">Date</label>
-                        <input type="date" id='date' className='w-full bg-zinc-800 p-1 outline-none'/>
+                        <input type="date" id='date' className='w-full bg-zinc-800 text-white p-1 outline-none'/>
                     </div>
                 </div>
 
@@ -82,22 +82,22 @@ function ContactMe() {
 
                 <div className='flex flex-col gap-1'>
                     <label htmlFor="subject" className='text-white'>Subject</label>
-                    <input type="text" id='subject' className='w-full bg-zinc-800 p-1 outline-none' />
+                    <input type="text" id='subject' className='w-full bg-zinc-800 p-1 text-white outline-none' />
                 </div>
 
                 {/* details */}
                 
                 <div className='flex flex-col gap-1'>
                     <label htmlFor="details" className='text-white'>Details</label>
-                    <textarea name="" id="details" className='w-full bg-zinc-800 outline-none' rows={10}></textarea>
+                    <textarea name="" id="details" className='w-full bg-zinc-800 outline-none text-white' rows={10}></textarea>
                 </div>
 
                 <button className='bg-transparent text-[#807d7d] border-1 border-[#807d7d] p-2'>Send Message</button>
             </form>
         </div>
-        <footer className='py-5 px-5 w-full bg-[#010101] text-white flex flex-col items-center gap-2'> 
-            <p className='text-[2vmax] capitalize tracking-wider italic'>Designed with intent. Build with Code!</p>
-            <p className='text-[2vmax] tracking-widest text-center'>&copy; {new Date().getFullYear()} <span className='font-bold'>Mohammad Akram</span>. All rights reserved.</p>
+        <footer className='py-5 px-5 w-full bg-[#010101] text-white flex flex-col items-center gap-2 inter-sub-font'> 
+            <p className='text-lg text-center capitalize tracking-wider italic'>Designed with intent. Build with Code!</p>
+            <p className='text-lg tracking-widest text-center'>&copy; {new Date().getFullYear()} <span className='font-bold'>Mohammad Akram</span>. All rights reserved.</p>
         </footer>
     </div>
   )
