@@ -2,13 +2,13 @@ import React from 'react'
 
 function ContactMe() {
   return (
-    <div id='contactMe' className='w-full bg-[#141313] '>
+    <div id='contactMe' className='w-full bg-[#0a0a0a] '>
         {/* Head Part */}
         <div className='relative w-full h-100 bg-[url(/ContactBg.jpg)] bg-center'>
-            <div className='w-full h-full absolute top-0 left-0 bg-black/75 p-5 flex flex-col justify-center'>
-                <h1 className='uppercase text-4xl font-bold text-center text-gray-300 tracking-widest montserrat-head-font'>Contact Me</h1>
+            <div className='w-full h-full absolute top-0 left-0 bg-[#0a0a0a]/85 p-5 flex flex-col justify-center'>
+                <h1 className='uppercase text-4xl font-bold text-center text-[#f5f5f5] tracking-widest montserrat-head-font'>Contact Me</h1>
             
-                <p className='text-center capitalize text-white/50 text-sm mt-5 inter-sub-font'>Want to work with me or any queries.<br />Just drop a message.</p>
+                <p className='text-center capitalize text-[#a0a0a0] text-sm mt-5 inter-sub-font'>Want to work with me or any queries.<br />Just drop a message.</p>
             </div>
         </div>
         
@@ -17,22 +17,22 @@ function ContactMe() {
         <div className='w-full flex flex-col md:flex-row justify-between md:items-start gap-10 px-10 md:px-15 py-20 md:py-25 inter-sub-font'>
             
             <div className='flex flex-col items-center w-full md:w-1/3 lg:w-1/2'>
-                <div className='w-full flex flex-wrap md:flex-col h-full justify-center md:justify-between gap-10 md:gap-5 px-10 py-5 md:px-0 md:py-0'>
+                <div className='w-full flex flex-wrap md:flex-col h-full justify-center md:justify-between gap-10 md:gap-5 px-10 py-5 md:px-0 md:py-0 bg-[#1a1a1a] border border-white/5 rounded-xl p-8'>
 
                     <div className=' flex flex-col items-center md:items-start gap-2'> 
-                        <h2 className='uppercase font-bold text-lg text-[#807d7d]'>Email Address</h2>
-                        <p className='underline text-md text-white'>khanakram32392@gmail.com</p>
+                        <h2 className='uppercase font-bold text-lg text-[#a0a0a0]'>Email Address</h2>
+                        <p className='text-md text-[#f5f5f5] hover:text-[#fb923c] transition-colors cursor-pointer'>khanakram32392@gmail.com</p>
                     </div>
 
                 <div className=' flex flex-col items-center md:items-start gap-2'> 
-                    <h2 className='uppercase font-bold text-lg text-[#807d7d]'>Call</h2>
-                    <p className='underline text-md text-white'>+91 6350164284</p>
+                    <h2 className='uppercase font-bold text-lg text-[#a0a0a0]'>Call</h2>
+                    <p className='text-md text-[#f5f5f5] hover:text-[#fb923c] transition-colors cursor-pointer'>+91 6350164284</p>
                 </div>
 
                 <div className=' flex flex-col items-center md:items-start gap-2'> 
-                    <h2 className='uppercase font-bold text-lg text-[#807d7d]'>Location</h2>
-                    <p className='underline text-md text-white'>Tal Katora, Tonk, Rajasthan</p>
-                    <p className='text-white text-md'>304001</p>
+                    <h2 className='uppercase font-bold text-lg text-[#a0a0a0]'>Location</h2>
+                    <p className='text-md text-[#f5f5f5]'>Tal Katora, Tonk, Rajasthan</p>
+                    <p className='text-[#a0a0a0] text-md'>304001</p>
                 </div>
                 </div>
             </div>
@@ -43,12 +43,12 @@ function ContactMe() {
                 {/* name section */}
                 <div className=' flex justify-between items-center gap-3'>
                     <div className='w-full flex flex-col gap-1'>
-                        <label htmlFor='firstName' className="text-white">First Name</label>
-                        <input type="text" id='firstName' className='w-full bg-zinc-800 p-1 outline-none text-white'/>
+                        <label htmlFor='firstName' className="text-[#e5e5e5]">First Name</label>
+                        <input type="text" id='firstName' className='w-full bg-[#1a1a1a] border border-white/10 focus:border-[#fb923c]/50 p-3 outline-none text-[#f5f5f5] rounded-lg transition-colors'/>
                     </div>
                     <div className='w-full flex flex-col gap-1'>
-                        <label htmlFor='lastName' className="text-white">Last Name</label>
-                        <input type="text" id='lastName' className='w-full bg-zinc-800 p-1 outline-none text-white'/>
+                        <label htmlFor='lastName' className="text-[#e5e5e5]">Last Name</label>
+                        <input type="text" id='lastName' className='w-full bg-[#1a1a1a] border border-white/10 focus:border-[#fb923c]/50 p-3 outline-none text-[#f5f5f5] rounded-lg transition-colors'/>
                     </div>
                 </div>
 
@@ -56,12 +56,12 @@ function ContactMe() {
 
                 <div className='w-full flex justify-between items-center gap-3'>
                     <div className='flex flex-col gap-1'>
-                        <label htmlFor='email' className="text-white">Email</label>
-                        <input type="text" id='email' className='w-full bg-zinc-800 p-1 outline-none text-white'/>
+                        <label htmlFor='email' className="text-[#e5e5e5]">Email</label>
+                        <input type="text" id='email' className='w-full bg-[#1a1a1a] border border-white/10 focus:border-[#fb923c]/50 p-3 outline-none text-[#f5f5f5] rounded-lg transition-colors'/>
                     </div>
                     <div className='flex flex-col gap-1'>
-                        <label htmlFor='phone' className="text-white">Phone</label>
-                        <input type="text" id='phone' className='w-full bg-zinc-800 p-1 outline-none text-white'/>
+                        <label htmlFor='phone' className="text-[#e5e5e5]">Phone</label>
+                        <input type="text" id='phone' className='w-full bg-[#1a1a1a] border border-white/10 focus:border-[#fb923c]/50 p-3 outline-none text-[#f5f5f5] rounded-lg transition-colors'/>
                     </div>
                 </div>
 
@@ -69,35 +69,35 @@ function ContactMe() {
 
                 <div className='w-full flex justify-between items-center gap-3'>
                     <div className='flex flex-col gap-1'>
-                        <label htmlFor='location' className="text-white">Location</label>
-                        <input type="text" id='location' className='w-full text-white bg-zinc-800 p-1 outline-none'/>
+                        <label htmlFor='location' className="text-[#e5e5e5]">Location</label>
+                        <input type="text" id='location' className='w-full bg-[#1a1a1a] border border-white/10 focus:border-[#fb923c]/50 p-3 outline-none text-[#f5f5f5] rounded-lg transition-colors'/>
                     </div>
                     <div className='w-1/3 flex flex-col gap-1'>
-                        <label htmlFor='date' className="text-white">Date</label>
-                        <input type="date" id='date' className='w-full bg-zinc-800 text-white p-1 outline-none'/>
+                        <label htmlFor='date' className="text-[#e5e5e5]">Date</label>
+                        <input type="date" id='date' className='w-full bg-[#1a1a1a] border border-white/10 focus:border-[#fb923c]/50 p-3 outline-none text-[#f5f5f5] rounded-lg transition-colors'/>
                     </div>
                 </div>
 
                 {/* subject */} 
 
                 <div className='flex flex-col gap-1'>
-                    <label htmlFor="subject" className='text-white'>Subject</label>
-                    <input type="text" id='subject' className='w-full bg-zinc-800 p-1 text-white outline-none' />
+                    <label htmlFor="subject" className='text-[#e5e5e5]'>Subject</label>
+                    <input type="text" id='subject' className='w-full bg-[#1a1a1a] border border-white/10 focus:border-[#fb923c]/50 p-3 outline-none text-[#f5f5f5] rounded-lg transition-colors' />
                 </div>
 
                 {/* details */}
                 
                 <div className='flex flex-col gap-1'>
-                    <label htmlFor="details" className='text-white'>Details</label>
-                    <textarea name="" id="details" className='w-full bg-zinc-800 outline-none text-white' rows={10}></textarea>
+                    <label htmlFor="details" className='text-[#e5e5e5]'>Details</label>
+                    <textarea name="" id="details" className='w-full bg-[#1a1a1a] border border-white/10 focus:border-[#fb923c]/50 outline-none text-[#f5f5f5] rounded-lg p-3 transition-colors' rows={10}></textarea>
                 </div>
 
-                <button className='bg-transparent text-[#807d7d] border-1 border-[#807d7d] p-2'>Send Message</button>
+                <button className='bg-transparent text-[#f5f5f5] border border-[#fb923c]/50 hover:bg-[#fb923c]/10 hover:border-[#fb923c] p-3 rounded-lg transition-all duration-300 font-semibold'>Send Message</button>
             </form>
         </div>
-        <footer className='py-5 px-5 w-full bg-[#010101] text-white flex flex-col items-center gap-2 inter-sub-font'> 
+        <footer className='py-5 px-5 w-full bg-[#0a0a0a] border-t border-white/5 text-[#a0a0a0] flex flex-col items-center gap-2 inter-sub-font'> 
             <p className='text-lg text-center capitalize tracking-wider italic'>Designed with intent. Build with Code!</p>
-            <p className='text-lg tracking-widest text-center'>&copy; {new Date().getFullYear()} <span className='font-bold'>Mohammad Akram</span>. All rights reserved.</p>
+            <p className='text-lg tracking-widest text-center'>&copy; {new Date().getFullYear()} <span className='font-bold text-[#f5f5f5]'>Mohammad Akram</span>. All rights reserved.</p>
         </footer>
     </div>
   )

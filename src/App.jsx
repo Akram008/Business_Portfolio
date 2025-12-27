@@ -26,7 +26,7 @@ function App() {
   }, [])
 
   return (
-    <div className='h-screen w-full bg-zinc-800'>
+    <div className='h-screen w-full bg-[#0a0a0a]'>
       <Navbar/>
       <Home/>
       <Work/>
